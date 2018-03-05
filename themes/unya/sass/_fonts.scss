@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'worksans';
+    src: url('../../assets/fonts/worksans-bold-webfont.eot');
+    src: url('../../assets/fonts/worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/worksans-bold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/worksans-bold-webfont.woff') format('woff'),
+         url('../../assets/fonts/worksans-bold-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/worksans-bold-webfont.svg#work_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'worksans';
+    src: url('../../assets/fonts/worksans-extrabold-webfont.eot');
+    src: url('../../assets/fonts/worksans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/worksans-extrabold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/worksans-extrabold-webfont.woff') format('woff'),
+         url('../../assets/fonts/worksans-extrabold-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/worksans-extrabold-webfont.svg#work_sansextrabold') format('svg');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'worksans';
+    src: url('../../assets/fonts/worksans-medium-webfont.eot');
+    src: url('../../assets/fonts/worksans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/worksans-medium-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/worksans-medium-webfont.woff') format('woff'),
+         url('../../assets/fonts/worksans-medium-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/worksans-medium-webfont.svg#work_sansmedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'worksans';
+    src: url('../../assets/fonts/worksans-regular-webfont.eot');
+    src: url('../../assets/fonts/worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/worksans-regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/worksans-regular-webfont.woff') format('woff'),
+         url('../../assets/fonts/worksans-regular-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/worksans-regular-webfont.svg#work_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'work_sanssemibold';
+    src: url('../../assets/fonts/worksans-semibold-webfont.eot');
+    src: url('../../assets/fonts/worksans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/worksans-semibold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/worksans-semibold-webfont.woff') format('woff'),
+         url('../../assets/fonts/worksans-semibold-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/worksans-semibold-webfont.svg#work_sanssemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../../assets/fonts/poppins-bold-webfont.eot');
+    src: url('../../assets/fonts/poppins-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/poppins-bold-webfont.woff') format('woff'),
+         url('../../assets/fonts/poppins-bold-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/poppins-bold-webfont.svg#poppinsbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../../assets/fonts/poppins-light-webfont.eot');
+    src: url('../../assets/fonts/poppins-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/poppins-light-webfont.woff') format('woff'),
+         url('../../assets/fonts/poppins-light-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/poppins-light-webfont.svg#poppinslight') format('svg');
+    font-weight: light;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'poppinsmedium';
+//     src: url('../../assets/fonts/poppins-medium-webfont.eot');
+//     src: url('../../assets/fonts/poppins-medium-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../../assets/fonts/poppins-medium-webfont.woff2') format('woff2'),
+//          url('../../assets/fonts/poppins-medium-webfont.woff') format('woff'),
+//          url('../../assets/fonts/poppins-medium-webfont.ttf') format('truetype'),
+//          url('../../assets/fonts/poppins-medium-webfont.svg#poppinsmedium') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../../assets/fonts/poppins-regular-webfont.eot');
+    src: url('../../assets/fonts/poppins-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/poppins-regular-webfont.woff') format('woff'),
+         url('../../assets/fonts/poppins-regular-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/poppins-regular-webfont.svg#poppinsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../../assets/fonts/poppins-semibold-webfont.eot');
+    src: url('../../assets/fonts/poppins-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../assets/fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/poppins-semibold-webfont.woff') format('woff'),
+         url('../../assets/fonts/poppins-semibold-webfont.ttf') format('truetype'),
+         url('../../assets/fonts/poppins-semibold-webfont.svg#poppinssemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}

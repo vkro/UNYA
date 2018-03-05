@@ -1,0 +1,68 @@
+// Structure
+
+$content-wrapper-desktop: 0 15.714285714rem 0 17.428571429rem;
+$base__space-unit: 1.5rem;
+
+// Colors
+
+$color__yellow: rgba(225,206,1,1);
+$color__yellow-dark: #E1CE01;
+$color__blue-light: #7392D9;
+$color__blue-medium: #4263AB;
+$color__blue-dark: #00277E;
+$color__red-medium: #D13434;
+$color__red-dark: #A70000;
+$color__grey-dark: #2C2C2C; //fonts
+
+$color__background-body: #fff;
+$color__text-main: #000;
+
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
+
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+
+$color__link: #4263AB;
+$color__link-visited: $color__blue-medium;
+$color__link-hover: $color__blue-dark;
+
+$color__heading-blue: #00277E;
+$color__heading-red: #A70000;
+$color__sidebar-nav: #4263AC;
+
+// Screen Width
+$desktop__min-width: 800px;
+$mobile__min-width: 540px;
+
+// Typography
+
+$font__main: 'worksans', sans-serif;
+$font__heading: 'poppins', sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+// note: mobile-first sizes
+$heading__h1: 2.5714285714rem;
+$heading__h2: 1.4285714286rem;
+$heading__h3: 1.1428571429rem;
+$heading__h4: 0.8571428571rem;
+
+//desktop variable size
+$desktop__h1: 3.2857142857rem;
+$desktop__h2: 2.2857142857rem;
+$desktop__h3: 1.7142857143rem;
+$desktop__h4: 1.2857142857rem;
+$desktop__h5: 1.1428571429rem;
+$desktop__main: 1.1428571429rem;
+$desktop__p: 1rem;
+
+$quote: 1rem;
+
+// forms
+$form__blue-border: 1.5px solid #00277E;
+$form__border-radius: 10px;

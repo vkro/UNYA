@@ -1,0 +1,421 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/* Links */
+.back-link{
+	p{
+		font-family: $font__main;
+	}
+	@include desktop{
+	text-align: right;
+	p{
+		margin-right:3rem;
+		
+}
+}
+}
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+/* Menus */
+
+.main-navigation {
+	clear: both;
+	display: flex;
+	width: auto;
+	align-items: center;
+	font-family: $font__main;
+	font-size: $heading__h3;
+	text-transform: uppercase;
+	display: none;
+	align-self: center;
+	@include desktop {
+		display: block;	
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			position: absolute;
+			top: $base__space-unit + 1.3rem;
+			left: -999rem;
+			z-index: 99999;
+			margin: 0;
+			padding: 0;
+			
+
+			ul {
+				left: -999rem;
+				top: 0;
+			}
+
+			li {
+				background: #fff;
+				&:hover {
+					background: $color__blue-medium;
+					a {
+						color: #fff;
+					}
+				}
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+	.menu-item {
+		padding: 0.5rem 1.5rem;
+		width: 100%;
+		border-bottom: 1px solid $color__blue-medium;
+		text-align: center;
+		@include desktop {
+			border: none;
+			width: auto;
+		}
+		.sub-menu {
+			border-radius: 0 0 0 10px;
+			.menu-item {
+				@include desktop {
+					text-align: left;
+					border-bottom: 1px solid $color__blue-medium;
+					&:last-child {
+						border-radius: 0 0 0 10px;
+					}
+				}
+			}
+		}
+
+	}
+	
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@include desktop {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 $base__space-unit;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	position: fixed;
+	background: #fff;
+	z-index: 9999;
+	transition: all 0.4s linear;
+	.site-branding {
+		padding: 1rem;
+		background: url('../../assets/images/RED_UNYA_UI_LogoDesign_Assets_V1-1.png') no-repeat center;
+		background-size: contain;
+		a {
+			padding: 1rem 4rem;
+		}
+	}
+	.donate {
+		display: none;
+		margin-right: 1rem;
+		padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+		align-self: center;
+		background: $color__red-medium;
+		border-radius: 10px;
+		color: #fff;
+		text-decoration: none;
+		font-family: $font__main;
+		text-transform: uppercase;
+		@include desktop {
+			display: block;
+		}
+		
+	}
+	
+}
+
+.site-header.expanded {
+	background: $color__blue-medium;
+	position: absolute;
+	left: 0;
+	right: 0;
+	flex-wrap: wrap;
+	height: 61%;
+	z-index: 299;
+	@include tablet {
+		height: 70%;
+	}
+	.site-branding {
+		background: url('../../assets/images/Logo-White.png') no-repeat center;
+		background-size: contain;
+		height: 3.5rem;
+	}
+	.main-navigation {
+		display: block;
+		flex-basis: 100%;
+		background: #fff;
+		height: 60%;
+		@include tablet {
+			height: 80%;
+		}
+		.menu-primary-menu-container{
+			.menu {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.menu-item-has-children.expanded {
+					background: $color__blue-dark;
+					z-index: 302;
+					a {
+						color: #fff;
+						&:visited {
+							color: #fff;
+						}
+					}
+					.sub-menu {
+						z-index: 999999;
+						.menu-item {
+							width: 100vw;
+						}
+						a {
+							color: $color__blue-dark;
+							&:visited {
+								color: $color__blue-dark;
+							}
+						}
+					}
+				}
+				li {
+					display: flex;
+					justify-content: center;
+				}
+				li:hover > ul {
+					display: block;
+				}
+			}
+		}
+	}
+	#main-nav-toggle {
+		background: url('../../assets/images/menu-close.svg') no-repeat center;
+		background-size: contain;
+		height: 3.5rem;
+		margin-right: 1rem;
+	}
+}
+
+.site-footer.expanded {
+	position: absolute;
+	height: 40%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	a {
+		text-decoration: none;
+	}
+	.subscription-form.display-form{
+		height: 100%;
+	}
+}
+
+.menu-gradient {
+	background: rgba(255,255,255,0.6);
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 301;
+}
+
+#main-nav-toggle {
+	display: block;
+	background: url('../../assets/images/menu-toggle.svg') no-repeat center;
+	background-size: contain;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	margin-right: 1rem;
+	@include desktop {
+		display: none;
+	}
+}
+
+#accordion {
+	width: 100%;
+	.accordion-label {
+		position: relative;
+		background: $color__blue-medium !important;
+		color: #fff !important;
+		margin: 0 !important;
+		border-radius: 0 !important;
+		border: none !important;
+		border-bottom: 1px solid #aaa !important;
+		&:focus {
+			outline: 0;
+		}
+		@include desktop {
+			border: none !important; 
+			background: transparent !important; 
+			color: transparent !important;
+			height: 0 !important;
+		}
+
+	}
+	.ui-accordion-content-active {
+		border-radius: 0 !important;
+		border: none !important;
+	}
+}
+
+//remove extra padding from content
+.ui-accordion .ui-accordion-content {
+	padding:  0 !important;
+}
+.menu-item-has-children {
+	.sub-menu {
+		.menu-item {
+			width: 100vw;
+			@include desktop {
+				width: auto;
+			}
+		}
+	}
+}
+
+.site-content.collapsed {
+	height: 0;
+	overflow: hidden;
+}
+
+.ui-icon {
+	background-image: url('../../assets/images/icons.png') !important;
+}
+
+.logo-carousel {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+
+#accordion #personal {
+	background: $color__red-medium !important;
+}
+
+#accordion #live-in {
+	background: $color__grey-dark !important;
+}
+
+#accordion #sports {
+	background: $color__yellow !important;
+}
+
+#accordion #donate {
+	background: $color__red-medium !important;
+}
+
+.nyc-content {
+	#accordion {
+		.accordion-label {
+			background: $color__red-medium !important;
+		}
+	}
+}
+
+.menu-item {
+  padding: 0.5rem 0rem !important;
+  a {
+		width: 100%;
+	}	
+	@include desktop {
+		padding: 0.5rem 1.5rem !important;
+	}
+}
+
+.sub-menu .menu-item a {
+	width: 100%;
+	@include desktop {
+		width: 200px;
+	}
+}

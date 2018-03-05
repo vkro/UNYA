@@ -1,0 +1,220 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Subscription Form (in footer) */
+.ctct-form{
+	display:flex;
+	flex-direction:column;
+	// margin-top:20px;
+}
+.ctct-form-wrapper{
+	height:160px;
+	display:flex;
+	justify-content:center;
+}
+.ctct-form-field-submit{
+	display:flex;
+	justify-content:left;
+	min-width: 320px;
+}
+div.ctct-disclosure {
+	display: none !important;
+}
+
+.ctct-button {
+	display: none;
+}
+
+.ctct-form-field-checkbox{
+	margin-bottom:30px;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: $form__blue-border;
+	border-radius: $form__border-radius;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+	background: $color__blue-dark;
+	color: #FFF;
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6rem 1rem .4rem;
+
+	&:hover {
+		border-color: #ccc #bbb #aaa;
+	}
+	&:active,
+	&:focus {
+		border-color: #aaa #bbb #bbb;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="checkbox"],
+textarea {
+	color: $color__grey-dark;
+	border: $form__blue-border;
+	border-radius: $form__border-radius;
+	width:300px;
+	height:40px;
+	&:focus {
+		color: #111;
+	}
+}
+
+.ctct-form-field-email{
+	display:flex;
+	justify-content: flex-start;
+		label{
+		display:none;
+		}
+	input[type=email]{
+		width: 100%;
+		height:50px;
+		position:relative;
+		padding-left:50px;
+		margin-top:15px;
+		@include desktop{
+		width:100%;
+			}
+		}
+	}
+	::placeholder{
+		padding-left:10px;
+		color:black;
+		}
+
+.ctct-form-wrapper input[type="text"],
+.ctct-form-wrapper input[type="email"],
+.ctct-form-wrapper input[type="password"],
+.ctct-form-wrapper input[type="tel"],
+.ctct-form-wrapper input[type="number"]{
+    background:  url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Envelope_font_awesome.svg/512px-Envelope_font_awesome.svg.png) no-repeat;
+    background-position: 8px 50%;
+    background-size: 24px;
+    border-color: form__blue-border;
+    padding-left: 40px;
+}
+input[type=checkbox]{
+	transform: scale(2,2);
+	width:20px;
+	}
+
+.ctct-input-container{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	padding-left:10px;
+}
+.ctct-form-wrapper{
+	height:100%;
+	.ctct-input-container label {
+		color: black;
+		font-family:$font__main;
+		font-size:1rem;
+		padding-left:10px;
+		}
+}
+
+input[type=submit]{
+	font-family:$font__main;
+	font-size:14px;
+	width:130px;
+	height:50px;
+	margin:20px 0px;
+}
+
+// Search form
+
+.search-form {
+	border: none;
+	.search-fieldset {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: space-between;
+		border: none;
+		padding-top: 3px;
+		.search-submit {
+			position: absolute;
+			left: 3%;
+			padding: 0;
+			padding-bottom: 2px;	
+			width: 1rem;
+			height: 1.75rem;
+			background: none;
+			color: black;
+			border: none;
+			box-shadow: none;
+			@include tablet {
+				left: 2%;
+			}
+			@include desktop {
+				position: relative;
+				left: -5%;
+			}
+		}
+	}
+}
+
+.search-field {
+	border: none !important;
+	height: 56px;
+	font-family: $font__main;
+	font-size: 16px;
+	outline: none;
+	text-decoration: none;
+	color: black;
+	padding-left: 3rem;
+	width: 100% !important;
+	@include desktop {
+		height: 100% !important;
+		width: 90% !important;
+		padding-left: 1rem;
+	}
+}
+
+#search-label {
+  width: 75%;
+}
+
+.search-field::placeholder {
+	color: #BABABA;
+}
+
+.mobile-search-controller {
+	display: initial !important;
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	width: 85%;
+  @include tablet {
+		top: 9%;
+	}
+}
+
+.search-form-wrapper {
+	display: none;
+	@include desktop {
+		display: initial;
+		border: 1px solid black;
+		border-radius: 5px;
+		width: 14rem;
+		height: 2.25rem;
+		overflow: hidden;
+		align-self: center;
+		margin-right: 0.5rem;
+	}
+
+}
+
+#nav-search-button {
+	font-size: 1rem;
+}

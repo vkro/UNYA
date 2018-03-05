@@ -1,0 +1,295 @@
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Captions */
+
+.wp-caption {
+	margin-bottom: $base__space-unit;
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		margin: 0.8075rem 0;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/* Galleries*/
+
+.gallery {
+	margin-bottom: $base__space-unit;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+
+	.gallery-columns-2 & {
+		max-width: 50%;
+	}
+
+	.gallery-columns-3 & {
+		max-width: 33.33%;
+	}
+
+	.gallery-columns-4 & {
+		max-width: 25%;
+	}
+
+	.gallery-columns-5 & {
+		max-width: 20%;
+	}
+
+	.gallery-columns-6 & {
+		max-width: 16.66%;
+	}
+
+	.gallery-columns-7 & {
+		max-width: 14.28%;
+	}
+
+	.gallery-columns-8 & {
+		max-width: 12.5%;
+	}
+
+	.gallery-columns-9 & {
+		max-width: 11.11%;
+	}
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.sbi_photo{
+	border-radius: 10%;
+}
+
+// home page banners
+.front-carousel{
+	width:100vw;
+	position:absolute !important;
+	height:350px;
+	  @include tablet{
+			height:500px;
+		}
+		@include desktop {
+			height:700px;
+		}
+}
+
+.front-image-container{
+	img{
+			background-size: cover;
+			overflow:hidden;
+			height:350px;
+			width:100%;
+			@include tablet{
+				height:500px;
+				width:100%;
+			}
+			@include desktop{
+				height:700px;
+				width:100%;
+			}
+		}
+}
+
+.about{
+	padding-top:0px !important;
+}
+.about, .nyc, .programs {
+  background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	height:350px;
+	@include tablet {
+		height: 500px;
+		padding-top: 15%;
+	}
+	@include desktop {
+		height:700px;
+		padding: 0;
+		}
+}
+
+.impact-polygon{
+  -webkit-clip-path: polygon( 0% 100%, 100% 100%, 100% 0%, 0% 0%);
+	background-size: cover;
+	background-position: center;
+	p{
+		@include desktop{
+			font-size:24px;
+		}
+	}
+}
+
+.rectangle-container{
+	background-size: cover;
+	background-position: center;
+	p{
+		@include desktop{
+			font-size:24px;
+		}
+	}
+}
+
+.philosophy {
+	background-size: cover;
+	background-position: center;
+}
+
+.nyc-banner {
+	background-size: cover;
+	background-position: center;
+}
+
+// Image Carousels
+
+// .image-carousel, .nyc-slide {
+// 	@include desktop {
+// 	margin:0 auto;
+// 	height:auto;
+//   }
+// }
+
+// .slick-frame {
+//   visibility: hidden;
+// 	background: #fff url('../../build/lib/ajax-loader.gif') center center no-repeat;
+// 	height: 300px;
+// 	overflow: hidden;
+
+// 	& > .generic-item-wrap-class {
+// 			visibility: hidden;
+// 	}
+
+// 	&.slick-initialized {
+// 			background: none;
+// 			height: auto;
+// 			overflow: auto;
+
+// 			& > .generic-item-wrap-class {
+// 					visibility: visible;
+// 			}
+// 	}
+
+// }
+
+// .nyc-content .image-carousel {
+// 	display: none;
+
+// 	@include desktop {
+// 		display: flex;
+// 	}
+
+// 	.image-container {
+// 		position: relative;
+// 		height: 750px;
+// 		width: 100%;
+// 	}
+
+	.gradient {
+		height: 100%;
+		width: 100%;
+		top: 0;
+		position: absolute;
+		background-image: linear-gradient(to bottom,rgba(74,74,74,0.4) 0%, rgba(74,74,74,0.4) 100%);
+		z-index: 4;
+		height:350px;
+	    @include tablet{
+			  height:500px;
+		}
+		  @include desktop {
+			  height:700px;
+		}
+	}
+
+// 	.image-quote {
+// 		padding: 2rem;
+// 		position: absolute;
+// 		top: 0;
+// 		color: #FFF;
+// 		font-family: $font__heading;
+// 		font-size: $desktop__h4;
+// 		z-index: 5;
+// 	}
+
+// 	img {
+// 		position: relative;
+// 		z-index: 1;
+// 		width: 100%;
+// 		height: auto;
+// 	}
+
+// 	.slick-prev:before, .slick-next:before {
+// 		color: #FFF;
+// 	}
+
+// 	.hide {
+// 		color: transparent;
+// 	}
+
+// 	.slick-dots {
+// 		display: flex;
+//     justify-content: center;
+
+// 		li button {
+// 			background: #FFF;
+// 		}
+// 	}
+// }
+
+// .slick-prev {
+// 	z-index: 10;
+// }
+
+// .single-program {
+// 	.slick-track {
+// 		height: 750px;
+// 	}
+
+// }
+
+// .nyc-slide {
+// 	background-size: cover;
+// 	background-position:top;
+// }
+
+.logo-carousel{
+	margin:0 auto;
+	height:300px;
+	padding:0;
+}
+
+// .partner{
+// 	margin: auto auto;
+// 	img{
+// 	  margin: auto auto;
+//   }
+// }

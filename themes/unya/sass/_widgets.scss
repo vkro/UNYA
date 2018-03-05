@@ -1,0 +1,155 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/* Sidebar nav menu */
+#secondary .menu-primary-menu-container {
+	position: absolute;
+	left: 0;
+	display: none;	
+	@include desktop {
+	  display: initial;
+	}
+}
+
+.sidebar-menu-container {
+	margin: 0;
+  padding: 0;
+	width: 15.714285714rem;
+
+	display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+	background: white;
+	border-radius: 0 0 10px 0;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+  list-style: none;
+
+	.menu-item, .menu-item-archive {
+		padding: 0.7142857143rem;
+		border-top: 1px solid $color__blue-medium;
+		
+		a {
+			color: $color__blue-medium;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		p, .fa-long-arrow-right {
+			color: $color__blue-medium;
+			margin: 0;
+		}
+
+		&:hover {
+			background-color: $color__sidebar-nav;
+			color: #FFF;
+			
+			p, .fa-long-arrow-right {
+				color: #FFF;
+			}
+
+			a {
+				color: #FFF;
+			}
+		}
+
+		&:last-child {
+			border-radius: 0 0 10px 0;
+			
+			&:hover {
+				border-radius: 0 0 10px 0;
+			}
+		}
+	}
+
+	.menu-item:first-child {
+		border-top: none;
+	}
+
+	.menu-title-archive {
+		background-color: $color__sidebar-nav;
+
+		p {
+			margin: 0;
+			color: #FFF;
+			font-size: 1.1428571429rem;
+			text-transform: uppercase;
+		}
+		
+	}
+
+	.archive-items {
+		border-top: none;
+
+		.fa-long-arrow-right {
+			width: 8%;
+			vertical-align: top;
+			padding-top: 2.01px;
+			font-size: 0.8571428571rem;
+		}
+
+		p {
+			width: 90%;
+			margin: 0;
+			display: inline-block;
+			font-size: 0.8571428571rem;
+		}
+	}
+
+}
+
+// style for Native Youth Center only
+.page-id-76 .sidebar-menu-container {
+
+	.menu-item {
+		border-top: 1px solid $color__red-medium;
+		
+		a {
+			color: $color__red-medium;
+		}
+
+		p {
+			color: $color__red-medium;
+		}
+
+		&:hover {
+			background-color: $color__red-medium;
+			
+			p, a {
+				color: #FFF;
+			}
+		}
+	}
+
+	.menu-item:first-child {
+		border-top: none;
+	}
+
+}
+
+.widget {
+	margin: 0 0 $base__space-unit;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+/* Instagram plugin */
+.instagram-images {
+	display: flex;
+  justify-content: center;
+
+	.instagram-heading {
+		text-align: center;
+		
+		@include desktop {
+			font-size: $desktop__h2;
+		}
+	}
+}
