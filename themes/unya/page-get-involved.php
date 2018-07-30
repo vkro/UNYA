@@ -60,7 +60,7 @@ get_header(); ?>
 				</div>
 
 				<?php $args = array(
-									'post_per_page' => 10,
+									'post_per_page' => 20,
 									'post_type'=> 'opportunities',
 									'opportunity_type' => 'employment'
 							);
