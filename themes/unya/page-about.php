@@ -20,7 +20,7 @@ get_header(); ?>
 		</div>
 		<section class="vision" id="vision">
 			<div class="content-wrapper">
-				<h2 class="about-header">What We Do</h2>
+				<h2 class="about-header">Mission and Vision</h2>
 				<p><?php echo wp_kses( CFS()->get( 'vision' ),array('br') ); ?></p>
 			</div>
 		</section>
