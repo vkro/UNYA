@@ -72,7 +72,7 @@ get_header(); ?>
 						<h3><?php the_title(); ?></h3>
 						<p class="hidden-mobile"><?php echo CFS()->get( 'description' ); ?></p>
 						<a class="get-involved-link" href="<?php echo CFS()->get( 'link' ); ?>" target="_blank">
-							(.pdf)
+							(view full posting)
 						</a>
 					</li>
 					<?php endforeach; wp_reset_postdata(); ?>
